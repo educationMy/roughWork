@@ -134,7 +134,7 @@ def train():
     model.add(Dense(1))
     model.compile(optimizer='adam', loss='mse')
     # fit model
-    model.fit(X, y, epochs=1000, verbose=1)
+    model.fit(X, y, epochs=100000, verbose=1)
 
     # save the model
     # os.remove("model.h5")
