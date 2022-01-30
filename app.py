@@ -250,7 +250,7 @@ def predict():
         plt.savefig('result.png', dpi=150);
         plt.close()
 
-        return render_template('result.html', img = '/Page-44.png')
+        return render_template('result.html', img = '/result.png')
     return "Please wait model is being trained"
 
 if __name__ == "__main__":
