@@ -19,6 +19,7 @@ app = Flask(__name__, static_url_path="", static_folder="")
 app.secret_key = "super secret key"
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['MAX_CONTENT_LENGTH'] = 100*1024*1024
 
 def allowed_file(filename):
     return '.' in filename and \
