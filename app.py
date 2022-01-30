@@ -134,7 +134,7 @@ def train():
     model.add(Dense(1))
     model.compile(optimizer='adam', loss='mse')
     # fit model
-    model.fit(X, y, epochs=300, verbose=1)
+    model.fit(X, y, epochs=1000, verbose=1)
 
     # save the model
     # os.remove("model.h5")
@@ -250,7 +250,7 @@ def predict():
         plt.savefig('result.png', dpi=150);
         plt.close()
 
-        return render_template('result.html', img = '/result.png')
+        return render_template('result.html', img = '/Page-44.png')
     return "Please wait model is being trained"
 
 if __name__ == "__main__":
